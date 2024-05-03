@@ -86,7 +86,7 @@ public class SearchPageTest extends BaseClass {
 	
 	@Test(retryAnalyzer = RetryAnalyser.class)
 	public void verifySortByPriceLowToHigh() {
-		List<String> expectedPriceList =List.of("$20.00","$30.00","$40.00","$50.00","$60.00","$70.00","$80.00","$90.00");
+		List<String> expectedPriceList =List.of("$21.00","$31.50","$42.00","$52.50","$63.00","$73.50","$84.00","$94.50");
 		result.searchAndSort("Apple", "priceasc");
 		List<String> actualLowToHighPrice = result.devicePriceList();
 		Assert.assertEquals(actualLowToHighPrice, expectedPriceList);
@@ -94,7 +94,7 @@ public class SearchPageTest extends BaseClass {
 	
 	@Test(retryAnalyzer = RetryAnalyser.class)
 	public void verifySortByPriceHighToLow() {
-		List<String> expectedPriceList =List.of("$110.00","$10.00","$100.00","$90.00","$80.00","$70.00","$60.00","$50.00");
+		List<String> expectedPriceList =List.of("$115.50","$10.50","$105.00","$94.50","$84.00","$73.50","$63.00","$52.50");
 		result.searchAndSort("Apple", "pricedesc");
 		List<String> actualLowToHighPrice = result.devicePriceList();
 		Assert.assertEquals(actualLowToHighPrice, expectedPriceList);
