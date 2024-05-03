@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.SearchPageTest">
+      <class name="com.test.LoginPageTest">
         <methods>
-          <include name="reportinitialize"/>
-          <include name="verifySortByPriceHighToLow"/>
-          <include name="verifyDevicesWithCategory" invocation-numbers="0 0 0 0 0 0 0 0 0"/>
-          <include name="closeReport"/>
-          <include name="verifySortByPriceLowToHigh"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="closeReport"/>
+          <include name="verifyLoginSuccessfull"/>
+          <include name="reportinitialize"/>
         </methods>
-      </class> <!-- com.test.SearchPageTest -->
+      </class> <!-- com.test.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
