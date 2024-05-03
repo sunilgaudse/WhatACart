@@ -10,7 +10,13 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class MyListeners extends BaseClass implements ITestListener{
- public static Logger log = Logger.getLogger(MyListeners.class);
+ @Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+public static Logger log = Logger.getLogger(MyListeners.class);
 	@Override
 	public void onTestStart(ITestResult result) {
 		test = report.createTest(result.getName());	
