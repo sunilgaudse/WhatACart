@@ -33,7 +33,7 @@ public class LoginPageTest extends BaseClass{
 	@Test
 	public void verifyLoginSuccessfull() {
 		lp.loginToApplication("sunilgaudse", "Sarika@20001994");
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement logout =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='sunilgaudse']")));
 		Assert.assertEquals(logout.getText(),"sunilgaudse");
 		
