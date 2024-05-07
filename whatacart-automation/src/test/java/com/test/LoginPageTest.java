@@ -1,5 +1,7 @@
 package com.test;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
@@ -16,49 +18,55 @@ import com.base.BaseClass;
 import com.pages.HomePage;
 import com.pages.LoginPage;
 
-public class LoginPageTest extends BaseClass{
-	
-	HomePage hp =null;
+public class LoginPageTest extends BaseClass {
+
+	HomePage hp = null;
 	LoginPage lp = null;
+
 	@BeforeSuite
 	public void reportinitialize() {
 		reportInIt();
 	}
+
 	@BeforeMethod
 	public void setup() throws Exception {
 		intialization();
-		
+
 		hp = new HomePage(driver);
-		lp = hp.loginBtn();		
+		lp = hp.loginBtn();
 	}
+
 	@Test
-	public void verifyLoginSuccessfull() {
+	public void verifyLoginSuccessfull() throws InterruptedException {
 		lp.loginToApplication("sunilgaudse", "Sarika@20001994");
-		WebElement logout = driver.findElement(By.xpath("//div[@id='top-links']//li[@class='dropdown']//span[text()='sunilgaudse']"));
-		//WebDriverWait wait = new WebDriverWait(driver, 40);
-	    //wait.ignoring(StaleElementReferenceException.class).until(ExpectedConditions.visibilityOf(logout));
-		//WebElement logout=driver.findElement(By.xpath("//span[text()='sunilgaudse']"));
-		Assert.assertEquals(logout.getText(),"sunilgaudse");
-		
-				
+		// WebElement logout = driver.findElement(By.xpath("//a[@title='My Account']"));
+//		By locator = By.xpath("//a[@title='My Account']//span");
+		WebDriverWait wait = new WebDriverWait(driver, 5000);
+		// Thread.sleep(500);
+		wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='sunilgaudse']"))));
+		WebElement logout = driver.findElement(By.xpath("//span[text()='sunilgaudse']"));
+		Assert.assertEquals(logout.getText(), "sunilgaudse");
+
 	}
+
 	@Test
 	public void verifyLoginFailedOnInvalidCred() {
 		lp.loginToApplication("sunilgaudase", "Sunil@94");
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-		WebElement warnText= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()='The credentials passed are not valid.']")));
-		Assert.assertEquals(warnText.getText() ,"The credentials passed are not valid.");
+		WebElement warnText = wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//p[text()='The credentials passed are not valid.']")));
+		Assert.assertEquals(warnText.getText(), "The credentials passed are not valid.");
 	}
-	
-	@AfterMethod  
+
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
-		
+
 	}
+
 	@AfterSuite
 	public void closeReport() {
 		report.flush();
 	}
-	
 
 }

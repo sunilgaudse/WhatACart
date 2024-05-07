@@ -43,6 +43,16 @@ public class SearchPageResult {
 		searchLogo.click();
 		list.click();
 	}
+	
+	public List<String> verifyDevices() {
+		List<String> actualResult = new ArrayList<String>();
+		for(WebElement device: devices) {
+			String text = device.getText();
+			actualResult.add(text);
+		}
+		return actualResult;
+	}
+	
 	public String searchCategory(String item,String value) {
 		searchBar.sendKeys(item);
 		searchLogo.click();
@@ -55,14 +65,7 @@ public class SearchPageResult {
 		String text = textResult.getText();
 		return text;
 	}
-	public List<String> verifyDevices() {
-		List<String> actualResult = new ArrayList<String>();
-		for(WebElement device: devices) {
-			String text = device.getText();
-			actualResult.add(text);
-		}
-		return actualResult;
-	}
+
 	public List<String> devicePriceList(){
 		
 		List<String> actaulPriceList = new ArrayList();
