@@ -34,8 +34,9 @@ public class LoginPageTest extends BaseClass{
 	@Test
 	public void verifyLoginSuccessfull() {
 		lp.loginToApplication("sunilgaudse", "Sarika@20001994");
+		WebElement logout = driver.findElement(By.xpath("//div[@id='top-links']//li[@class='dropdown']//span[text()='sunilgaudse']"));
 		WebDriverWait wait = new WebDriverWait(driver, 40);
-		WebElement logout =  wait.ignoring(StaleElementReferenceException.class).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='top-links']//li[@class='dropdown']//span[text()='sunilgaudse']")));
+	    wait.ignoring(StaleElementReferenceException.class).until(ExpectedConditions.visibilityOf(logout));
 		//WebElement logout=driver.findElement(By.xpath("//span[text()='sunilgaudse']"));
 		Assert.assertEquals(logout.getText(),"sunilgaudse");
 		
