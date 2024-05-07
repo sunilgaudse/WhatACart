@@ -43,7 +43,7 @@ public class LoginPageTest extends BaseClass {
 //		By locator = By.xpath("//a[@title='My Account']//span");
 		WebDriverWait wait = new WebDriverWait(driver, 5000);
 		// Thread.sleep(500);
-		wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='sunilgaudse']"))));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='sunilgaudse']")));
 		WebElement logout = driver.findElement(By.xpath("//span[text()='sunilgaudse']"));
 		Assert.assertEquals(logout.getText(), "sunilgaudse");
 
