@@ -47,7 +47,7 @@ public class LoginPageTest extends BaseClass {
 		//WebDriverWait wait = new WebDriverWait(driver, 500);
 		Thread.sleep(500);
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='sunilgaudse']")));
-		WebElement logout = driver.findElement(By.xpath("//span[text()='sunilgaudse']"));
+		WebElement logout = driver.findElement(By.xpath("//a[@title='My Account']"));
 		Assert.assertEquals(logout.getText(), "sunilgaudse");
 		log.info("verifyLoginSuccessfull execution completed");
 		
