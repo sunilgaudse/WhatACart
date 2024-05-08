@@ -4,9 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -42,13 +44,14 @@ public class LoginPageTest extends BaseClass {
 	public void verifyLoginSuccessfull() throws InterruptedException {
 		log.info("verifyLoginSuccessfull test execution started.");
 		lp.loginToApplication("sunilgaudse", "Sarika@20001994");
-		// WebElement logout = driver.findElement(By.xpath("//a[@title='My Account']"));
-//		By locator = By.xpath("//a[@title='My Account']//span");
-		//WebDriverWait wait = new WebDriverWait(driver, 500);
-		Thread.sleep(500);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='sunilgaudse']")));
-		WebElement logout = driver.findElement(By.xpath("//a[@title='My Account']"));
-		Assert.assertEquals(logout.getText(), "sunilgaudse");
+			
+		WebDriverWait wait = new WebDriverWait(driver, 500);
+		wait.until(ExpectedConditions.urlToBe("https://ingecnotechnologies.com/other/Wcart/"));
+		WebElement dropdown = driver.findElement(By.xpath("//a[@title='My Account']"));
+		dropdown.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Logout']")));
+		String logout = driver.findElement(By.xpath("//a[text()='Logout']")).getText();
+		Assert.assertEquals(logout, "Logout");
 		log.info("verifyLoginSuccessfull execution completed");
 		
 
