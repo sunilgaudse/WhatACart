@@ -37,6 +37,8 @@ public class SearchPageResult {
 	WebElement sort;
 	@FindBy(xpath = "//span[@class='price-new']")
 	List<WebElement> prices;
+	@FindBy(xpath="//div[@data-key=\"0\"]//h4")
+	WebElement appleClick;
 	
 	public void searchItems(String item) {
 		searchBar.sendKeys(item);
@@ -68,7 +70,7 @@ public class SearchPageResult {
 
 	public List<String> devicePriceList(){
 		
-		List<String> actaulPriceList = new ArrayList();
+		List<String> actaulPriceList = new ArrayList<String>();
 		for(WebElement price:prices) {
 			String text = price.getText();
 			actaulPriceList.add(text);
@@ -82,6 +84,14 @@ public class SearchPageResult {
 		list.click();
 		Select sl= new Select(sort);
 		sl.selectByValue(value);
+	}
+	
+	public ProductPage searchDesktopAndClick(String item) {
+		searchBar.sendKeys(item);
+		searchLogo.click();
+		list.click();
+		appleClick.click();
+		return new ProductPage(driver);
 	}
 	
 	

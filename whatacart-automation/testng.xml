@@ -7,7 +7,8 @@
   <test thread-count="5" name="Test">
 	  <classes>
 		  <class name="com.test.LoginPageTest"></class>
-		  
+		  <class name="com.test.SearchPageTest"></class>
+		  <class name="com.test.ProductPageTest"></class>
 	  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -26,10 +26,12 @@ public class SearchPageTest extends BaseClass {
 	public void setUp() throws Exception {
 		intialization();
 		result = new SearchPageResult(driver);
+		log.info("Test case execution started");
 	}
 
 	@Test(dataProvider = "devices", retryAnalyzer = RetryAnalyser.class)
 	public void verifySearchResults(String deviceName) {
+		
 		List<String> expectedResult = null;
 		if (deviceName == "Apple") {
 			expectedResult = List.of("Apple Cinema 20\"", "Apple Cinema 21\"", "Apple Cinema 22\"", "Apple Cinema 23\"",
@@ -54,6 +56,7 @@ public class SearchPageTest extends BaseClass {
 	@Test(dataProvider = "category", retryAnalyzer = RetryAnalyser.class)
 	public void verifyDevicesWithCategory(String deviceValue) {
 
+		
 		if (deviceValue == "1") {
 			List<String> expectedResult = List.of("Apple Cinema 20\"", "Apple Cinema 21\"", "Apple Cinema 22\"",
 					"Apple Cinema 23\"", "Apple Cinema 24\"", "Apple Cinema 25\"", "Apple Cinema 26\"",
@@ -76,6 +79,7 @@ public class SearchPageTest extends BaseClass {
 
 	@Test(retryAnalyzer = RetryAnalyser.class)
 	public void verifySortByDescendingOrder() {
+		
 		List<String> expectedResult = List.of("Apple Cinema 30\"","Apple Cinema 29\"", "Apple Cinema 28\"", "Apple Cinema 27\"",
 				"Apple Cinema 26\"", "Apple Cinema 25\"", "Apple Cinema 24\"", "Apple Cinema 23\"" 
 				);
@@ -86,6 +90,7 @@ public class SearchPageTest extends BaseClass {
 	
 	@Test(retryAnalyzer = RetryAnalyser.class)
 	public void verifySortByPriceLowToHigh() {
+		
 		List<String> expectedPriceList =List.of("$21.00","$31.50","$42.00","$52.50","$63.00","$73.50","$84.00","$94.50");
 		result.searchAndSort("Apple", "priceasc");
 		List<String> actualLowToHighPrice = result.devicePriceList();
@@ -94,6 +99,7 @@ public class SearchPageTest extends BaseClass {
 	
 	@Test(retryAnalyzer = RetryAnalyser.class)
 	public void verifySortByPriceHighToLow() {
+		
 		List<String> expectedPriceList =List.of("$115.50","$10.50","$105.00","$94.50","$84.00","$73.50","$63.00","$52.50");
 		result.searchAndSort("Apple", "pricedesc");
 		List<String> actualLowToHighPrice = result.devicePriceList();
@@ -113,6 +119,7 @@ public class SearchPageTest extends BaseClass {
 
 	@AfterMethod
 	public void tearDown() {
+		log.info("Test case execution completed");
 		driver.quit();
 	}
 

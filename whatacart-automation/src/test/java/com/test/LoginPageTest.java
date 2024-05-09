@@ -1,14 +1,9 @@
 package com.test;
 
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -42,7 +37,7 @@ public class LoginPageTest extends BaseClass {
 
 	@Test
 	public void verifyLoginSuccessfull() throws InterruptedException {
-		log.info("verifyLoginSuccessfull test execution started.");
+		log.info("verifyLoginSuccessfull test case execution started.");
 		lp.loginToApplication("sunilgaudse", "Sarika@20001994");
 			
 		WebDriverWait wait = new WebDriverWait(driver, 500);
@@ -51,21 +46,23 @@ public class LoginPageTest extends BaseClass {
 		dropdown.click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Logout']")));
 		String logout = driver.findElement(By.xpath("//a[text()='Logout']")).getText();
+		log.info("Expected text is : " + logout);
 		Assert.assertEquals(logout, "Logout");
-		log.info("verifyLoginSuccessfull execution completed");
+		log.info("verifyLoginSuccessfull test case execution completed");
 		
 
 	}
 
 	@Test
 	public void verifyLoginFailedOnInvalidCred() {
-		log.info("verifyLoginFailedOnInvalidCred test execution started.");
+		log.info("verifyLoginFailedOnInvalidCred test  case execution started.");
 		lp.loginToApplication("sunilgaudase", "Sunil@94");
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		WebElement warnText = wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//p[text()='The credentials passed are not valid.']")));
+		log.info("Expected text are : "+ warnText.getText());
 		Assert.assertEquals(warnText.getText(), "The credentials passed are not valid.");
-		log.info("verifyLoginFailedOnInvalidCred test execution completed.");
+		log.info("verifyLoginFailedOnInvalidCred test case execution completed.");
 	}
 
 	@AfterMethod
