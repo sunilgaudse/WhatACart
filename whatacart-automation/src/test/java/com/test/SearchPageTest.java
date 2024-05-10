@@ -24,13 +24,15 @@ public class SearchPageTest extends BaseClass {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
+		log.info("Test case execution started");
 		intialization();
 		result = new SearchPageResult(driver);
-		log.info("Test case execution started");
+		
 	}
 
 	@Test(dataProvider = "devices", retryAnalyzer = RetryAnalyser.class)
 	public void verifySearchResults(String deviceName) {
+		log.info("Test case name is verifySearchResults");
 		
 		List<String> expectedResult = null;
 		if (deviceName == "Apple") {

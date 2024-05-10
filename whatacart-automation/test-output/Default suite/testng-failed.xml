@@ -8,8 +8,8 @@
           <include name="closeReport"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="verifyBlankReviewText"/>
           <include name="reportInitialization"/>
-          <include name="verifySpecification"/>
         </methods>
       </class> <!-- com.test.ProductPageTest -->
     </classes>

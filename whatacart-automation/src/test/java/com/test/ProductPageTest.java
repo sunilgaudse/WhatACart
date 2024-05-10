@@ -30,10 +30,11 @@ public class ProductPageTest extends BaseClass {
 
 	@BeforeMethod
 	public void setup() throws Exception {
+		log.info("Test case execution started");
 		intialization();
 		sp = new SearchPageResult(driver);
 		pp = sp.searchDesktopAndClick("Apple");
-		log.info("Test case execution started");
+		
 
 	}
 
@@ -71,6 +72,12 @@ public class ProductPageTest extends BaseClass {
 			}
 
 		}
+	}
+	
+	@Test
+	public void verifyBlankReviewText() {
+		String blankText=pp.nonSubmitReview();
+		Assert.assertEquals(blankText, "Review cannot be blank.");
 	}
 
 	@AfterMethod

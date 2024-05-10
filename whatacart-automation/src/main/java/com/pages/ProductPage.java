@@ -1,10 +1,7 @@
 package com.pages;
 
 
-import java.util.List;
-
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,7 +32,7 @@ public class ProductPage {
 	WebElement submit;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-review']")
 	WebElement feedbackOnSubmit;
-	@FindBy(xpath = "//p[@class='help-block help-block-error ']")
+	@FindBy(xpath = "//p[text()='Review cannot be blank.']")
 	WebElement blankReview;
 	@FindBy(id="productreview-name")
 	WebElement name;
@@ -45,6 +42,8 @@ public class ProductPage {
 	WebElement specsTab;
 	@FindBy(xpath="//table[@class='table table-bordered']//tbody")
 	WebElement table;
+	
+	
 
 
 	public String verifyDescription() {
@@ -63,6 +62,15 @@ public class ProductPage {
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		wait.until(ExpectedConditions.visibilityOf(feedbackOnSubmit));
 		return feedbackOnSubmit.getText();
+	}
+	public String nonSubmitReview() {
+		
+		reviewTab.click();
+		submit.click();
+		WebDriverWait wait = new WebDriverWait(driver, 100);
+		wait.until(ExpectedConditions.visibilityOf(blankReview));
+		
+		return blankReview.getText();
 	}
 	
 	public WebElement getSpecificationsTable(){
