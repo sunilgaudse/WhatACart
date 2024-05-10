@@ -29,4 +29,12 @@ public class LoginPage {
 		login.click();
 	}
 	
+	public SearchPageResult validLogIn() {
+		username.sendKeys("sunilgaudse");
+		password.sendKeys("Sarika@20001994");
+		login.click();
+		return new SearchPageResult(driver);
+		
+	}
+	
 }

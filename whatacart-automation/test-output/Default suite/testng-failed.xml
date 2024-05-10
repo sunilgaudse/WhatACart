@@ -5,9 +5,11 @@
     <classes>
       <class name="com.test.ProductPageTest">
         <methods>
+          <include name="closeReport"/>
+          <include name="teardown"/>
           <include name="setup"/>
           <include name="reportInitialization"/>
-          <include name="verifyDescriptionText"/>
+          <include name="verifySpecification"/>
         </methods>
       </class> <!-- com.test.ProductPageTest -->
     </classes>

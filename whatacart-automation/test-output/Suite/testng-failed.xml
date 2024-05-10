@@ -8,9 +8,12 @@
     <classes>
       <class name="com.test.SearchPageTest">
         <methods>
+          <include name="verifySearchResults"/>
           <include name="reportinitialize"/>
-          <include name="verifyDevicesWithCategory" invocation-numbers="0 2 2"/>
+          <include name="verifySortByPriceHighToLow"/>
           <include name="closeReport"/>
+          <include name="verifySortByDescendingOrder"/>
+          <include name="verifySortByPriceLowToHigh"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
