@@ -1,5 +1,6 @@
 package com.test;
 
+import java.lang.reflect.Method;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -29,13 +30,12 @@ public class ProductPageTest extends BaseClass {
 	}
 
 	@BeforeMethod
-	public void setup() throws Exception {
-		log.info("Test case execution started");
+	public void setup(Method method) throws Exception {
+		log.info("Test case execution started with name :"+ method.getName());
 		intialization();
 		sp = new SearchPageResult(driver);
 		pp = sp.searchDesktopAndClick("Apple");
 		
-
 	}
 
 	@Test
@@ -81,8 +81,9 @@ public class ProductPageTest extends BaseClass {
 	}
 
 	@AfterMethod
-	public void teardown() {
-		log.info("Test case execution completed");
+	public void teardown(Method method) {
+		log.info("Test case execution completed with name :"+ method.getName());
+		log.info("==================================================================================");
 		driver.quit();
 	}
 

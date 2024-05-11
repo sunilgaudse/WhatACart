@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="16" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-11T01:25:10 IST" name="Suite" finished-at="2024-05-11T01:26:45 IST" duration-ms="95423">
+  <suite started-at="2024-05-11T11:24:54 IST" name="Suite" finished-at="2024-05-11T11:26:57 IST" duration-ms="122884">
     <groups>
     </groups>
-    <test started-at="2024-05-11T01:25:10 IST" name="Test" finished-at="2024-05-11T01:26:45 IST" duration-ms="95423">
+    <test started-at="2024-05-11T11:24:54 IST" name="Test" finished-at="2024-05-11T11:26:57 IST" duration-ms="122884">
       <class name="com.test.SearchPageTest">
-        <test-method is-config="true" signature="reportinitialize()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:10 IST" name="reportinitialize" finished-at="2024-05-11T01:25:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportinitialize()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:24:54 IST" name="reportinitialize" finished-at="2024-05-11T11:24:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportinitialize -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:31 IST" name="setUp" finished-at="2024-05-11T01:25:34 IST" duration-ms="2740" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:25:07 IST" name="setUp" finished-at="2024-05-11T11:25:10 IST" duration-ms="2948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDevicesWithCategory(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:34 IST" name="verifyDevicesWithCategory" data-provider="category" finished-at="2024-05-11T01:25:36 IST" duration-ms="2220" status="PASS">
+        <test-method signature="verifyDevicesWithCategory(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:25:10 IST" name="verifyDevicesWithCategory" data-provider="category" finished-at="2024-05-11T11:25:12 IST" duration-ms="2423" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +33,135 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDevicesWithCategory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:36 IST" name="tearDown" finished-at="2024-05-11T01:25:37 IST" duration-ms="476" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:25:12 IST" name="tearDown" finished-at="2024-05-11T11:25:13 IST" duration-ms="432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:37 IST" name="setUp" finished-at="2024-05-11T01:25:40 IST" duration-ms="2913" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:25:13 IST" name="setUp" finished-at="2024-05-11T11:25:56 IST" duration-ms="43703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDevicesWithCategory(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:40 IST" name="verifyDevicesWithCategory" data-provider="category" finished-at="2024-05-11T01:25:42 IST" duration-ms="2657" status="PASS">
+        <test-method retried="true" signature="verifyDevicesWithCategory(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:25:56 IST" name="verifyDevicesWithCategory" data-provider="category" finished-at="2024-05-11T11:25:56 IST" duration-ms="40" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TUSSHAR', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 484b522a5d9ed9b0628f5ae2342c7bbd
+*** Element info: {Using=id, value=navbarsearchform-keyword}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TUSSHAR', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 484b522a5d9ed9b0628f5ae2342c7bbd
+*** Element info: {Using=id, value=navbarsearchform-keyword}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+at com.pages.SearchPageResult.searchCategory(SearchPageResult.java:59)
+at com.test.SearchPageTest.verifyDevicesWithCategory(SearchPageTest.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDevicesWithCategory -->
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:25:56 IST" name="tearDown" finished-at="2024-05-11T11:25:57 IST" duration-ms="226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:25:57 IST" name="setUp" finished-at="2024-05-11T11:26:00 IST" duration-ms="3410" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDevicesWithCategory(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:00 IST" name="verifyDevicesWithCategory" data-provider="category" finished-at="2024-05-11T11:26:02 IST" duration-ms="2120" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,15 +172,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDevicesWithCategory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:42 IST" name="tearDown" finished-at="2024-05-11T01:25:43 IST" duration-ms="469" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:02 IST" name="tearDown" finished-at="2024-05-11T11:26:03 IST" duration-ms="571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:43 IST" name="setUp" finished-at="2024-05-11T01:25:46 IST" duration-ms="2848" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:03 IST" name="setUp" finished-at="2024-05-11T11:26:06 IST" duration-ms="2908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyDevicesWithCategory(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:46 IST" name="verifyDevicesWithCategory" data-provider="category" finished-at="2024-05-11T01:25:48 IST" duration-ms="1731" status="PASS">
+        <test-method signature="verifyDevicesWithCategory(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:06 IST" name="verifyDevicesWithCategory" data-provider="category" finished-at="2024-05-11T11:26:07 IST" duration-ms="1682" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,15 +205,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDevicesWithCategory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:48 IST" name="tearDown" finished-at="2024-05-11T01:25:48 IST" duration-ms="467" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:07 IST" name="tearDown" finished-at="2024-05-11T11:26:08 IST" duration-ms="460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:48 IST" name="setUp" finished-at="2024-05-11T01:25:51 IST" duration-ms="2829" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:08 IST" name="setUp" finished-at="2024-05-11T11:26:11 IST" duration-ms="2896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySearchResults(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchResults(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:51 IST" name="verifySearchResults" data-provider="devices" finished-at="2024-05-11T01:25:52 IST" duration-ms="1224" status="PASS">
+        <test-method signature="verifySearchResults(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:11 IST" name="verifySearchResults" data-provider="devices" finished-at="2024-05-11T11:26:12 IST" duration-ms="1018" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,15 +238,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:52 IST" name="tearDown" finished-at="2024-05-11T01:25:53 IST" duration-ms="558" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:12 IST" name="tearDown" finished-at="2024-05-11T11:26:12 IST" duration-ms="461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySearchResults(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:53 IST" name="setUp" finished-at="2024-05-11T01:25:55 IST" duration-ms="2784" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:12 IST" name="setUp" finished-at="2024-05-11T11:26:15 IST" duration-ms="2929" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySearchResults(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchResults(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:55 IST" name="verifySearchResults" data-provider="devices" finished-at="2024-05-11T01:25:57 IST" duration-ms="1792" status="PASS">
+        <test-method signature="verifySearchResults(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:15 IST" name="verifySearchResults" data-provider="devices" finished-at="2024-05-11T11:26:16 IST" duration-ms="1018" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,15 +271,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:57 IST" name="tearDown" finished-at="2024-05-11T01:25:58 IST" duration-ms="501" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:16 IST" name="tearDown" finished-at="2024-05-11T11:26:17 IST" duration-ms="460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySearchResults(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:25:58 IST" name="setUp" finished-at="2024-05-11T01:26:00 IST" duration-ms="2676" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:17 IST" name="setUp" finished-at="2024-05-11T11:26:19 IST" duration-ms="2848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySearchResults(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchResults(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:00 IST" name="verifySearchResults" data-provider="devices" finished-at="2024-05-11T01:26:02 IST" duration-ms="1322" status="PASS">
+        <test-method signature="verifySearchResults(java.lang.String)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:19 IST" name="verifySearchResults" data-provider="devices" finished-at="2024-05-11T11:26:20 IST" duration-ms="949" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,139 +304,272 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResults -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:02 IST" name="tearDown" finished-at="2024-05-11T01:26:02 IST" duration-ms="468" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:20 IST" name="tearDown" finished-at="2024-05-11T11:26:21 IST" duration-ms="472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySearchResults(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:02 IST" name="setUp" finished-at="2024-05-11T01:26:05 IST" duration-ms="2734" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:21 IST" name="setUp" finished-at="2024-05-11T11:26:24 IST" duration-ms="2635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySortByDescendingOrder()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySortByDescendingOrder()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:05 IST" name="verifySortByDescendingOrder" finished-at="2024-05-11T01:26:07 IST" duration-ms="1774" status="PASS">
+        <test-method signature="verifySortByDescendingOrder()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:24 IST" name="verifySortByDescendingOrder" finished-at="2024-05-11T11:26:25 IST" duration-ms="1647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySortByDescendingOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:07 IST" name="tearDown" finished-at="2024-05-11T01:26:07 IST" duration-ms="463" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:25 IST" name="tearDown" finished-at="2024-05-11T11:26:26 IST" duration-ms="427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySortByDescendingOrder()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:07 IST" name="setUp" finished-at="2024-05-11T01:26:10 IST" duration-ms="2726" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:26 IST" name="setUp" finished-at="2024-05-11T11:26:28 IST" duration-ms="2680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySortByPriceHighToLow()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySortByPriceHighToLow()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:10 IST" name="verifySortByPriceHighToLow" finished-at="2024-05-11T01:26:12 IST" duration-ms="1694" status="PASS">
+        <test-method signature="verifySortByPriceHighToLow()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:28 IST" name="verifySortByPriceHighToLow" finished-at="2024-05-11T11:26:30 IST" duration-ms="1669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySortByPriceHighToLow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:12 IST" name="tearDown" finished-at="2024-05-11T01:26:12 IST" duration-ms="687" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:30 IST" name="tearDown" finished-at="2024-05-11T11:26:30 IST" duration-ms="433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySortByPriceHighToLow()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:12 IST" name="setUp" finished-at="2024-05-11T01:26:15 IST" duration-ms="2864" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:30 IST" name="setUp" finished-at="2024-05-11T11:26:33 IST" duration-ms="2984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySortByPriceLowToHigh()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySortByPriceLowToHigh()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:15 IST" name="verifySortByPriceLowToHigh" finished-at="2024-05-11T01:26:17 IST" duration-ms="1847" status="PASS">
+        <test-method signature="verifySortByPriceLowToHigh()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:33 IST" name="verifySortByPriceLowToHigh" finished-at="2024-05-11T11:26:35 IST" duration-ms="1492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySortByPriceLowToHigh -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:17 IST" name="tearDown" finished-at="2024-05-11T01:26:18 IST" duration-ms="565" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:35 IST" name="tearDown" finished-at="2024-05-11T11:26:35 IST" duration-ms="570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.SearchPageTest.verifySortByPriceLowToHigh()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T01:26:47 IST" name="closeReport" finished-at="2024-05-11T01:26:47 IST" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.test.SearchPageTest@60f00693]" started-at="2024-05-11T11:26:58 IST" name="closeReport" finished-at="2024-05-11T11:26:58 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
       </class> <!-- com.test.SearchPageTest -->
       <class name="com.test.ProductPageTest">
-        <test-method is-config="true" signature="reportInitialization()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:25:10 IST" name="reportInitialization" finished-at="2024-05-11T01:25:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportInitialization()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:24:54 IST" name="reportInitialization" finished-at="2024-05-11T11:24:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportInitialization -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:18 IST" name="setup" finished-at="2024-05-11T01:26:22 IST" duration-ms="4584" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:35 IST" name="setup" finished-at="2024-05-11T11:26:40 IST" duration-ms="4160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.ProductPageTest.verifyBlankReviewText()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyBlankReviewText()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:22 IST" name="verifyBlankReviewText" finished-at="2024-05-11T01:26:23 IST" duration-ms="799" status="PASS">
+        <test-method signature="verifyBlankReviewText()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:40 IST" name="verifyBlankReviewText" finished-at="2024-05-11T11:26:40 IST" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBlankReviewText -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:23 IST" name="teardown" finished-at="2024-05-11T01:26:24 IST" duration-ms="599" status="PASS">
+        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:40 IST" name="teardown" finished-at="2024-05-11T11:26:41 IST" duration-ms="470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.ProductPageTest.verifyBlankReviewText()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:24 IST" name="setup" finished-at="2024-05-11T01:26:28 IST" duration-ms="4315" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:41 IST" name="setup" finished-at="2024-05-11T11:26:45 IST" duration-ms="4196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.ProductPageTest.verifyDescriptionText()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyDescriptionText()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:28 IST" name="verifyDescriptionText" finished-at="2024-05-11T01:26:28 IST" duration-ms="240" status="PASS">
+        <test-method signature="verifyDescriptionText()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:45 IST" name="verifyDescriptionText" finished-at="2024-05-11T11:26:45 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescriptionText -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:28 IST" name="teardown" finished-at="2024-05-11T01:26:29 IST" duration-ms="562" status="PASS">
+        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:45 IST" name="teardown" finished-at="2024-05-11T11:26:46 IST" duration-ms="631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.ProductPageTest.verifyDescriptionText()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:29 IST" name="setup" finished-at="2024-05-11T01:26:33 IST" duration-ms="4394" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:46 IST" name="setup" finished-at="2024-05-11T11:26:50 IST" duration-ms="4115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.ProductPageTest.verifyIsReviewSubmittedWithoutLogIn()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyIsReviewSubmittedWithoutLogIn()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:33 IST" name="verifyIsReviewSubmittedWithoutLogIn" finished-at="2024-05-11T01:26:39 IST" duration-ms="6270" status="PASS">
+        <test-method signature="verifyIsReviewSubmittedWithoutLogIn()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:50 IST" name="verifyIsReviewSubmittedWithoutLogIn" finished-at="2024-05-11T11:26:51 IST" duration-ms="1548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIsReviewSubmittedWithoutLogIn -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:39 IST" name="teardown" finished-at="2024-05-11T01:26:40 IST" duration-ms="463" status="PASS">
+        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:51 IST" name="teardown" finished-at="2024-05-11T11:26:52 IST" duration-ms="476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.ProductPageTest.verifyIsReviewSubmittedWithoutLogIn()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:40 IST" name="setup" finished-at="2024-05-11T01:26:44 IST" duration-ms="4710" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:52 IST" name="setup" finished-at="2024-05-11T11:26:56 IST" duration-ms="4291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.ProductPageTest.verifySpecification()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySpecification()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:44 IST" name="verifySpecification" finished-at="2024-05-11T01:26:45 IST" duration-ms="313" status="PASS">
+        <test-method signature="verifySpecification()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:56 IST" name="verifySpecification" finished-at="2024-05-11T11:26:56 IST" duration-ms="300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:45 IST" name="teardown" finished-at="2024-05-11T01:26:45 IST" duration-ms="515" status="PASS">
+        <test-method is-config="true" signature="teardown(java.lang.reflect.Method)[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:56 IST" name="teardown" finished-at="2024-05-11T11:26:57 IST" duration-ms="437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.ProductPageTest.verifySpecification()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T01:26:46 IST" name="closeReport" finished-at="2024-05-11T01:26:47 IST" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.test.ProductPageTest@79207381]" started-at="2024-05-11T11:26:58 IST" name="closeReport" finished-at="2024-05-11T11:26:58 IST" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
       </class> <!-- com.test.ProductPageTest -->
       <class name="com.test.LoginPageTest">
-        <test-method is-config="true" signature="reportinitialize()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T01:25:09 IST" name="reportinitialize" finished-at="2024-05-11T01:25:10 IST" duration-ms="441" status="PASS">
+        <test-method is-config="true" signature="reportinitialize()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T11:24:54 IST" name="reportinitialize" finished-at="2024-05-11T11:24:54 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportinitialize -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T01:25:10 IST" name="setup" finished-at="2024-05-11T01:25:17 IST" duration-ms="7027" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T11:24:54 IST" name="setup" finished-at="2024-05-11T11:24:59 IST" duration-ms="4867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.LoginPageTest.verifyLoginFailedOnInvalidCred()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginFailedOnInvalidCred()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T01:25:17 IST" name="verifyLoginFailedOnInvalidCred" finished-at="2024-05-11T01:25:18 IST" duration-ms="1344" status="PASS">
+        <test-method signature="verifyLoginFailedOnInvalidCred()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T11:24:59 IST" name="verifyLoginFailedOnInvalidCred" finished-at="2024-05-11T11:25:00 IST" duration-ms="1354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginFailedOnInvalidCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T01:25:18 IST" name="tearDown" finished-at="2024-05-11T01:25:19 IST" duration-ms="510" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T11:25:00 IST" name="tearDown" finished-at="2024-05-11T11:25:01 IST" duration-ms="447" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.LoginPageTest.verifyLoginFailedOnInvalidCred()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T01:25:19 IST" name="setup" finished-at="2024-05-11T01:25:22 IST" duration-ms="3570" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T11:25:01 IST" name="setup" finished-at="2024-05-11T11:25:04 IST" duration-ms="3513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.LoginPageTest.verifyLoginSuccessfull() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginSuccessfull()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T01:25:22 IST" name="verifyLoginSuccessfull" finished-at="2024-05-11T01:25:31 IST" duration-ms="8538" status="PASS">
+        <test-method signature="verifyLoginSuccessfull()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T11:25:04 IST" name="verifyLoginSuccessfull" finished-at="2024-05-11T11:25:06 IST" duration-ms="2136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginSuccessfull -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T01:25:31 IST" name="tearDown" finished-at="2024-05-11T01:25:31 IST" duration-ms="500" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T11:25:06 IST" name="tearDown" finished-at="2024-05-11T11:25:07 IST" duration-ms="436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.LoginPageTest.verifyLoginSuccessfull() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T01:26:45 IST" name="closeReport" finished-at="2024-05-11T01:26:46 IST" duration-ms="1042" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.test.LoginPageTest@69c81773]" started-at="2024-05-11T11:26:57 IST" name="closeReport" finished-at="2024-05-11T11:26:58 IST" duration-ms="935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->

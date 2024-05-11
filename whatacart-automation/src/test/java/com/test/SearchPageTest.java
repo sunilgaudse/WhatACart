@@ -1,5 +1,6 @@
 package com.test;
 
+import java.lang.reflect.Method;
 import java.util.List;
 
 import org.testng.Assert;
@@ -23,8 +24,8 @@ public class SearchPageTest extends BaseClass {
 	}
 
 	@BeforeMethod
-	public void setUp() throws Exception {
-		log.info("Test case execution started");
+	public void setUp(Method method) throws Exception {
+		log.info("Test case execution started with name :"+ method.getName());
 		intialization();
 		result = new SearchPageResult(driver);
 		
@@ -120,8 +121,9 @@ public class SearchPageTest extends BaseClass {
 	}
 
 	@AfterMethod
-	public void tearDown() {
-		log.info("Test case execution completed");
+	public void tearDown(Method method) {
+		log.info("Test case execution completed with name :"+ method.getName());
+		log.info("==================================================================================");
 		driver.quit();
 	}
 

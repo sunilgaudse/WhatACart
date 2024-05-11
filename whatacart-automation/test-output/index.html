@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">16 methods,  1 skipped,  15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.SearchPageTest" class="method navigator-link" hash-for-method="verifyDevicesWithCategory(2)">verifyDevicesWithCategory(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,17 +128,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.SearchPageTest" class="method navigator-link" hash-for-method="verifyDevicesWithCategory(3)">verifyDevicesWithCategory(3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.test.SearchPageTest" class="method navigator-link" hash-for-method="verifyDevicesWithCategory(2)">verifyDevicesWithCategory(2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.test.SearchPageTest" class="method navigator-link" hash-for-method="verifyDevicesWithCategory(1)">verifyDevicesWithCategory(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.SearchPageTest" class="method navigator-link" hash-for-method="verifyDevicesWithCategory(3)">verifyDevicesWithCategory(3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -189,6 +203,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.test.SearchPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDevicesWithCategory(2)">
+                  </a> <!-- verifyDevicesWithCategory(2) -->
+                  <span class="method-name">verifyDevicesWithCategory</span>
+                  <span class="parameters">(2)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.201)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;TUSSHAR&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 484b522a5d9ed9b0628f5ae2342c7bbd
+*** Element info: {Using=id, value=navbarsearchform-keyword}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
+	at com.pages.SearchPageResult.searchCategory(SearchPageResult.java:59)
+	at com.test.SearchPageTest.verifyDevicesWithCategory(SearchPageTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -255,14 +312,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyDevicesWithCategory(3)">
-                  </a> <!-- verifyDevicesWithCategory(3) -->
-                  <span class="method-name">verifyDevicesWithCategory</span>
-                  <span class="parameters">(3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyDevicesWithCategory(2)">
                   </a> <!-- verifyDevicesWithCategory(2) -->
                   <span class="method-name">verifyDevicesWithCategory</span>
@@ -275,6 +324,14 @@
                   </a> <!-- verifyDevicesWithCategory(1) -->
                   <span class="method-name">verifyDevicesWithCategory</span>
                   <span class="parameters">(1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDevicesWithCategory(3)">
+                  </a> <!-- verifyDevicesWithCategory(3) -->
+                  <span class="method-name">verifyDevicesWithCategory</span>
+                  <span class="parameters">(3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -381,72 +438,76 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(15);
+data.addRows(16);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginSuccessfull')
-data.setCell(0, 2, 'com.test.LoginPageTest')
-data.setCell(0, 3, 8538);
+data.setCell(0, 1, 'verifyDevicesWithCategory')
+data.setCell(0, 2, 'com.test.SearchPageTest')
+data.setCell(0, 3, 2423);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyIsReviewSubmittedWithoutLogIn')
-data.setCell(1, 2, 'com.test.ProductPageTest')
-data.setCell(1, 3, 6270);
+data.setCell(1, 1, 'verifyLoginSuccessfull')
+data.setCell(1, 2, 'com.test.LoginPageTest')
+data.setCell(1, 3, 2136);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyDevicesWithCategory')
 data.setCell(2, 2, 'com.test.SearchPageTest')
-data.setCell(2, 3, 2657);
+data.setCell(2, 3, 2120);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyDevicesWithCategory')
 data.setCell(3, 2, 'com.test.SearchPageTest')
-data.setCell(3, 3, 2220);
+data.setCell(3, 3, 1682);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifySortByPriceLowToHigh')
+data.setCell(4, 1, 'verifySortByPriceHighToLow')
 data.setCell(4, 2, 'com.test.SearchPageTest')
-data.setCell(4, 3, 1847);
+data.setCell(4, 3, 1669);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifySearchResults')
+data.setCell(5, 1, 'verifySortByDescendingOrder')
 data.setCell(5, 2, 'com.test.SearchPageTest')
-data.setCell(5, 3, 1792);
+data.setCell(5, 3, 1647);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifySortByDescendingOrder')
-data.setCell(6, 2, 'com.test.SearchPageTest')
-data.setCell(6, 3, 1774);
+data.setCell(6, 1, 'verifyIsReviewSubmittedWithoutLogIn')
+data.setCell(6, 2, 'com.test.ProductPageTest')
+data.setCell(6, 3, 1548);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyDevicesWithCategory')
+data.setCell(7, 1, 'verifySortByPriceLowToHigh')
 data.setCell(7, 2, 'com.test.SearchPageTest')
-data.setCell(7, 3, 1731);
+data.setCell(7, 3, 1492);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifySortByPriceHighToLow')
-data.setCell(8, 2, 'com.test.SearchPageTest')
-data.setCell(8, 3, 1694);
+data.setCell(8, 1, 'verifyLoginFailedOnInvalidCred')
+data.setCell(8, 2, 'com.test.LoginPageTest')
+data.setCell(8, 3, 1354);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyLoginFailedOnInvalidCred')
-data.setCell(9, 2, 'com.test.LoginPageTest')
-data.setCell(9, 3, 1344);
+data.setCell(9, 1, 'verifySearchResults')
+data.setCell(9, 2, 'com.test.SearchPageTest')
+data.setCell(9, 3, 1018);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verifySearchResults')
 data.setCell(10, 2, 'com.test.SearchPageTest')
-data.setCell(10, 3, 1322);
+data.setCell(10, 3, 1018);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'verifySearchResults')
 data.setCell(11, 2, 'com.test.SearchPageTest')
-data.setCell(11, 3, 1224);
+data.setCell(11, 3, 949);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'verifyBlankReviewText')
 data.setCell(12, 2, 'com.test.ProductPageTest')
-data.setCell(12, 3, 799);
+data.setCell(12, 3, 646);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'verifySpecification')
 data.setCell(13, 2, 'com.test.ProductPageTest')
-data.setCell(13, 3, 313);
+data.setCell(13, 3, 300);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'verifyDescriptionText')
 data.setCell(14, 2, 'com.test.ProductPageTest')
-data.setCell(14, 3, 240);
+data.setCell(14, 3, 216);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyDevicesWithCategory')
+data.setCell(15, 2, 'com.test.SearchPageTest')
+data.setCell(15, 3, 40);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -482,224 +543,236 @@ return data;
               <div class="chronological-class-name">com.test.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">reportInitialization</span>
-                <span class="method-start">442 ms</span>
+                <span class="method-start">378 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.SearchPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">reportinitialize</span>
-                <span class="method-start">443 ms</span>
+                <span class="method-start">379 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">491 ms</span>
+                <span class="method-name">setup(public void com.test.LoginPageTest.verifyLoginFailedOnInvalidCred())</span>
+                <span class="method-start">432 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginFailedOnInvalidCred</span>
-                <span class="method-start">7520 ms</span>
+                <span class="method-start">5300 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">8884 ms</span>
+                <span class="method-name">tearDown(public void com.test.LoginPageTest.verifyLoginFailedOnInvalidCred())</span>
+                <span class="method-start">6670 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">9395 ms</span>
+                <span class="method-name">setup(public void com.test.LoginPageTest.verifyLoginSuccessfull() throws java.lang.InterruptedException)</span>
+                <span class="method-start">7118 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginSuccessfull</span>
-                <span class="method-start">12965 ms</span>
+                <span class="method-start">10631 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">21509 ms</span>
+                <span class="method-name">tearDown(public void com.test.LoginPageTest.verifyLoginSuccessfull() throws java.lang.InterruptedException)</span>
+                <span class="method-start">12770 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.SearchPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">22018 ms</span>
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String))</span>
+                <span class="method-start">13215 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDevicesWithCategory(1)</span>
-                <span class="method-start">24758 ms</span>
+                <span class="method-start">16163 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">26982 ms</span>
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String))</span>
+                <span class="method-start">18589 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">27458 ms</span>
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String))</span>
+                <span class="method-start">19021 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDevicesWithCategory(2)</span>
-                <span class="method-start">30372 ms</span>
+                <span class="method-start">62724 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">33031 ms</span>
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String))</span>
+                <span class="method-start">62771 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">33501 ms</span>
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String))</span>
+                <span class="method-start">62998 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDevicesWithCategory(2)</span>
+                <span class="method-start">66408 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String))</span>
+                <span class="method-start">68532 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String))</span>
+                <span class="method-start">69104 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDevicesWithCategory(3)</span>
-                <span class="method-start">36350 ms</span>
+                <span class="method-start">72012 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">38083 ms</span>
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifyDevicesWithCategory(java.lang.String))</span>
+                <span class="method-start">73696 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">38551 ms</span>
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifySearchResults(java.lang.String))</span>
+                <span class="method-start">74157 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchResults(Apple)</span>
-                <span class="method-start">41380 ms</span>
+                <span class="method-start">77053 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">42608 ms</span>
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifySearchResults(java.lang.String))</span>
+                <span class="method-start">78075 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">43166 ms</span>
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifySearchResults(java.lang.String))</span>
+                <span class="method-start">78536 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchResults(Sony)</span>
-                <span class="method-start">45950 ms</span>
+                <span class="method-start">81465 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">47752 ms</span>
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifySearchResults(java.lang.String))</span>
+                <span class="method-start">82488 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">48254 ms</span>
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifySearchResults(java.lang.String))</span>
+                <span class="method-start">82949 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchResults(Canon)</span>
-                <span class="method-start">50930 ms</span>
+                <span class="method-start">85798 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">52254 ms</span>
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifySearchResults(java.lang.String))</span>
+                <span class="method-start">86751 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">52723 ms</span>
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifySortByDescendingOrder())</span>
+                <span class="method-start">87223 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySortByDescendingOrder</span>
-                <span class="method-start">55457 ms</span>
+                <span class="method-start">89858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">57234 ms</span>
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifySortByDescendingOrder())</span>
+                <span class="method-start">91506 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">57697 ms</span>
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifySortByPriceHighToLow())</span>
+                <span class="method-start">91933 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySortByPriceHighToLow</span>
-                <span class="method-start">60423 ms</span>
+                <span class="method-start">94613 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">62119 ms</span>
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifySortByPriceHighToLow())</span>
+                <span class="method-start">96284 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">62806 ms</span>
+                <span class="method-name">setUp(public void com.test.SearchPageTest.verifySortByPriceLowToHigh())</span>
+                <span class="method-start">96718 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySortByPriceLowToHigh</span>
-                <span class="method-start">65670 ms</span>
+                <span class="method-start">99702 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">67519 ms</span>
+                <span class="method-name">tearDown(public void com.test.SearchPageTest.verifySortByPriceLowToHigh())</span>
+                <span class="method-start">101198 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">68086 ms</span>
+                <span class="method-name">setup(public void com.test.ProductPageTest.verifyBlankReviewText())</span>
+                <span class="method-start">101769 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBlankReviewText</span>
-                <span class="method-start">72670 ms</span>
+                <span class="method-start">105930 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">73475 ms</span>
+                <span class="method-name">teardown(public void com.test.ProductPageTest.verifyBlankReviewText())</span>
+                <span class="method-start">106578 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">74074 ms</span>
+                <span class="method-name">setup(public void com.test.ProductPageTest.verifyDescriptionText())</span>
+                <span class="method-start">107048 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDescriptionText</span>
-                <span class="method-start">78389 ms</span>
+                <span class="method-start">111244 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">78632 ms</span>
+                <span class="method-name">teardown(public void com.test.ProductPageTest.verifyDescriptionText())</span>
+                <span class="method-start">111462 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">79195 ms</span>
+                <span class="method-name">setup(public void com.test.ProductPageTest.verifyIsReviewSubmittedWithoutLogIn())</span>
+                <span class="method-start">112094 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyIsReviewSubmittedWithoutLogIn</span>
-                <span class="method-start">83589 ms</span>
+                <span class="method-start">116209 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">89862 ms</span>
+                <span class="method-name">teardown(public void com.test.ProductPageTest.verifyIsReviewSubmittedWithoutLogIn())</span>
+                <span class="method-start">117758 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">90326 ms</span>
+                <span class="method-name">setup(public void com.test.ProductPageTest.verifySpecification())</span>
+                <span class="method-start">118235 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySpecification</span>
-                <span class="method-start">95036 ms</span>
+                <span class="method-start">122526 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">95352 ms</span>
+                <span class="method-name">teardown(public void com.test.ProductPageTest.verifySpecification())</span>
+                <span class="method-start">122828 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">95915 ms</span>
+                <span class="method-start">123321 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">96957 ms</span>
+                <span class="method-start">124256 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.SearchPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">97109 ms</span>
+                <span class="method-start">124387 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
